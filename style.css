@@ -12,6 +12,7 @@ aside{
     justify-content: start;
     flex-direction: column;
     height: 100vh;
+    gap: 10px;
 }
 aside i:nth-child(1){
     font-size: 25px;
@@ -39,4 +40,16 @@ aside .icon i{
     color: #22a559;
     border-radius: 50%;
     cursor: pointer;
+    font-size: 22px;
+    transition: all .3s ease-in-out;
+}
+aside .icon i:hover{
+    color: white;
+    background-color: #22a559;
+    border-radius: 18px;
+}
+hr{
+    width: 50%;
+    border-radius: 30px;
+    border: 1px solid #cdced3;
 }
