@@ -15,7 +15,7 @@ aside{
     gap: 10px;
 }
 aside i:nth-child(1){
-    font-size: 25px;
+    font-size: 22px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,7 +41,7 @@ aside .icon i{
     color: #22a559;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 20px;
     transition: all .3s ease-in-out;
 }
 aside .icon i:hover{
