@@ -146,3 +146,15 @@ main .sidebar-chat .list .list-item:nth-child(3) {
 main .sidebar-chat .list .list-item:nth-child(3):hover {
     backdrop-filter: grayscale(100);
 }
+main .sidebar-chat .list .list-item .new{
+    background-color: #d9363b;
+    color: white;
+    border-radius: 30px;
+    padding: 1px 5px;
+    font-size: 11px;
+    font-weight: bolder;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0%,-50%);
+}
