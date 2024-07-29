@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Nunito Sans", sans-serif;
 }
-main{
+
+main {
     width: 100%;
     display: flex;
 }
-aside{
+
+aside {
     width: 70px;
     padding: 12px;
     background-color: #e4e5e9;
@@ -20,7 +23,8 @@ aside{
     height: 100vh;
     gap: 10px;
 }
-aside i:nth-child(1){
+
+aside i:nth-child(1) {
     font-size: 24px;
     display: flex;
     align-items: center;
@@ -29,18 +33,20 @@ aside i:nth-child(1){
     color: white;
     background-color: #5865f2;
     border-radius: 15px;
-    width: 45px;   
+    width: 45px;
     height: 45px;
     cursor: pointer;
 }
-aside img{
+
+aside img {
     width: 45px;
     height: 45px;
     border-radius: 50%;
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
-aside .icon i{
+
+aside .icon i {
     width: 45px;
     height: 45px;
     background-color: white;
@@ -50,30 +56,36 @@ aside .icon i{
     font-size: 20px;
     transition: all .3s ease-in-out;
 }
-aside .icon i:hover{
+
+aside .icon i:hover {
     color: white;
     background-color: #22a559;
     border-radius: 18px;
 }
-aside img:hover{
+
+aside img:hover {
     border-radius: 18px;
 }
-hr{
+
+hr {
     width: 50%;
     border-radius: 30px;
     border: 1px solid #cdced3;
 }
-main .sidebar-chat{
+
+main .sidebar-chat {
     width: 240px;
     height: 100vh;
     background-color: #f2f3f5;
 }
-main .sidebar-chat .top-nav{
+
+main .sidebar-chat .top-nav {
     width: 100%;
     padding: 10px 7px;
     border-bottom: 2px solid #d2d4d6;
 }
-main .sidebar-chat .top-nav input{
+
+main .sidebar-chat .top-nav input {
     width: 100%;
     padding: 7px;
     border-radius: 5px;
@@ -81,7 +93,12 @@ main .sidebar-chat .top-nav input{
     border: none;
     outline: none;
 }
-main .sidebar-chat .list-item{
+
+main .sidebar-chat .list-item svg path {
+    fill: #4d5058;
+}
+
+main .sidebar-chat .list-item {
     width: 100%;
     padding: 10px 12px;
     display: flex;
@@ -92,16 +109,40 @@ main .sidebar-chat .list-item{
     cursor: pointer;
     border-radius: 5px;
     transition: all .1s ease-in-out;
+    color: #4d5058;
 }
-main .sidebar-chat .list-item:hover{
+
+main .sidebar-chat .list-item:hover {
     background-color: #d8d9dd;
+    color: #060606;
+    fill: #060606;
 }
-main .sidebar-chat .list-item.active{
+main .sidebar-chat .list-item:hover svg path {
+    fill: #060606;
+}
+
+main .sidebar-chat .list-item.active {
     background-color: #d8d9dd;
+    color: #060606;
 }
-main .sidebar-chat .list{
+
+main .sidebar-chat .list-item.active svg path {
+    fill: #060606;
+}
+
+main .sidebar-chat .list {
     padding: 7px;
     display: flex;
     flex-direction: column;
     gap: 2px;
+}
+
+main .sidebar-chat .list .list-item:nth-child(3) {
+    background-image: url("./Assets/bg-img\ list.png");
+    background-position: right;
+    background-size: cover;
+    position: relative;
+}
+main .sidebar-chat .list .list-item:nth-child(3):hover {
+    backdrop-filter: grayscale(100);
 }
