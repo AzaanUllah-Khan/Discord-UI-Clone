@@ -110,6 +110,7 @@ main .sidebar-chat .list-item {
     border-radius: 5px;
     transition: all .1s ease-in-out;
     color: #4d5058;
+    position: relative;
 }
 
 main .sidebar-chat .list-item:hover {
@@ -150,9 +151,21 @@ main .sidebar-chat .list .list-item .new{
     background-color: #d9363b;
     color: white;
     border-radius: 30px;
+    padding: 1px 6px;
+    font-size: 12px;
+    font-weight: 800;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0%,-50%);
+}
+main .sidebar-chat .list .list-item .buy{
+    background-image: linear-gradient(to right, hsl(269 calc(1 * 52.7%) 52.7% / 1), hsl(325 calc(1 * 31.7%) 51.8% / 1));
+    color: white;
+    border-radius: 30px;
     padding: 1px 5px;
-    font-size: 11px;
-    font-weight: bolder;
+    font-size: 12px;
+    font-weight: 800;
     position: absolute;
     top: 50%;
     right: 10px;
