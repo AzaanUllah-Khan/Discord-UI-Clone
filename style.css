@@ -60,11 +60,11 @@ aside .icon i {
 aside .icon i:hover {
     color: white;
     background-color: #22a559;
-    border-radius: 18px;
+    border-radius: 15px;
 }
 
 aside img:hover {
-    border-radius: 18px;
+    border-radius: 15px;
 }
 
 hr {
