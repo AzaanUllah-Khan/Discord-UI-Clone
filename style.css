@@ -171,3 +171,20 @@ main .sidebar-chat .list .list-item .buy{
     right: 10px;
     transform: translate(0%,-50%);
 }
+main .sidebar-chat .dm{
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+main .sidebar-chat .dm h1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #5b5e65;
+    cursor: pointer;
+}
+main .sidebar-chat .dm h1:hover{
+    color: #4d5058;
+}
