@@ -207,6 +207,7 @@ main .sidebar-chat .dm .friends .f-li{
 main .sidebar-chat .dm .friends .f-li p{
     color: #5b5e65;
     font-weight: 500;
+    font-size: 16px;
 }
 main .sidebar-chat .dm .friends .f-li:hover{
     background-color: #d8d9dd;
@@ -251,4 +252,8 @@ main .sidebar-chat .dm .friends .f-li i{
     top: 50%;
     right: 8px;
     transform: translate(0%,-50%);
+    display: none;
+}
+main .sidebar-chat .dm .friends .f-li:hover > i{
+    display: block;
 }
