@@ -316,3 +316,6 @@ main .sidebar-chat .profile .right{
     gap: 10px;
     font-size: 16px;
 }
+main .sidebar-chat .profile .right i{
+    transform: rotateY(180deg);
+}
