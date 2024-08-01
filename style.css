@@ -314,8 +314,17 @@ main .sidebar-chat .profile .right{
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 16px;
+    font-size: 18px;
 }
 main .sidebar-chat .profile .right i{
     transform: rotateY(180deg);
+    transition: all .5s ease-in;
+    cursor: pointer;
+    color: #4d5057;
+}
+main .sidebar-chat .profile .right i.mute{
+    color: #d9373c;
+}
+main .sidebar-chat .profile .right i:nth-child(3):hover{
+    rotate: 180deg;
 }
