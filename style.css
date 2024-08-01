@@ -310,3 +310,9 @@ main .sidebar-chat .profile .left .txt span{
     font-weight: 300;
     font-size: 12px;
 }
+main .sidebar-chat .profile .right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
