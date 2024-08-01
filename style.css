@@ -322,14 +322,29 @@ main .sidebar-chat .profile .right{
     font-size: 18px;
 }
 main .sidebar-chat .profile .right i{
-    transform: rotateY(180deg);
-    transition: all .5s ease-in;
     cursor: pointer;
     color: #4d5057;
 }
 main .sidebar-chat .profile .right i.mute{
+    transition: all 0s;
     color: #d9373c;
+    animation: spring .2s;
+    transform: translateX(3px);
 }
 main .sidebar-chat .profile .right i:nth-child(3):hover{
     rotate: 180deg;
+}
+@keyframes spring {
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateX(2px);
+    }
+    50%{
+        transform: translateX(-2px);
+    }
+    100%{
+        transform: translateX(2px);
+    }
 }
