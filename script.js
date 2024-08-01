@@ -10,8 +10,12 @@ function mic(){
         micO = false
     }
 }
-function head(){
-    if(headO){
-
-    }else{}
+function headp(){
+    if(!headO){
+        document.getElementById("head").className = "fa-solid fa-headphones mute"
+        headO = true
+    }else{
+        document.getElementById("head").className = "fa-solid fa-headphones"
+        headO = false
+    }
 }

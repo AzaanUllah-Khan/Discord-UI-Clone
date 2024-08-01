@@ -331,12 +331,24 @@ main .sidebar-chat .profile .right i.mute{
     animation: spring .2s;
     transform: translateX(3px);
 }
-main .sidebar-chat .profile .right i:nth-child(3):hover{
-    rotate: 180deg;
+main .sidebar-chat .profile .right i.fa-headphones.mute{
+    transition: all 0s;
+    color: #d9373c;
+    animation: tilt .2s;
+    transform: translateX(0px);
 }
+main .sidebar-chat .profile .right i.fa-gear {
+    transition: all .5s ease-in-out;
+    transform: rotate(0deg);
+}
+
+main .sidebar-chat .profile .right i.fa-gear:hover {
+    transform: rotate(180deg);
+}
+
 @keyframes spring {
     0%{
-        transform: translateY(0px);
+        transform: translateX(0px);
     }
     25%{
         transform: translateX(2px);
@@ -346,5 +358,19 @@ main .sidebar-chat .profile .right i:nth-child(3):hover{
     }
     100%{
         transform: translateX(2px);
+    }
+}
+@keyframes tilt {
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(2px);
+    }
+    50%{
+        transform: translateY(-2px);
+    }
+    100%{
+        transform: translateY(2px);
     }
 }
