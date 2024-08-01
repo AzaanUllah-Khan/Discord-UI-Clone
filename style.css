@@ -257,3 +257,56 @@ main .sidebar-chat .dm .friends .f-li i{
 main .sidebar-chat .dm .friends .f-li:hover > i{
     display: block;
 }
+main .sidebar-chat .profile{
+    background-color: #ecedef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+main .sidebar-chat .profile .img-wrapper {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+main .sidebar-chat .profile .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+main .sidebar-chat .profile .img-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    right: -1px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #24a55a;
+    box-shadow: 0px 0px 0px 3px #ecedef;
+}
+main .sidebar-chat .profile .left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+main .sidebar-chat .profile .left .txt{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 16px;
+}
+main .sidebar-chat .profile .left .txt p{
+    font-weight: 700;
+    font-size: 14px;
+}
+main .sidebar-chat .profile .left .txt span{
+    font-weight: 300;
+    font-size: 12px;
+}
