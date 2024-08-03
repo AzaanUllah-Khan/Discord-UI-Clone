@@ -450,7 +450,7 @@ main .rightside-area .bottom{
     font-size: 60px;
     color: #2e3339;
     margin-bottom: 30px;
-    animation: spindis .9s infinite;
+    animation: spindis .75s infinite;
 }
 .loader-home h1{
     font-size: 14px;
