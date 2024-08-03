@@ -449,7 +449,8 @@ main .rightside-area .bottom{
 .loader-home i{
     font-size: 60px;
     color: #2e3339;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    animation: spindis .9s infinite;
 }
 .loader-home h1{
     font-size: 14px;
@@ -474,4 +475,12 @@ main .rightside-area .bottom{
     color: #0b0c0e;
     background-color: rgb(234, 235, 237);
     margin-right: 5px;
+}
+@keyframes spindis {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
 }
