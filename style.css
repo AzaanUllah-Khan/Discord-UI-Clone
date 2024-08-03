@@ -432,7 +432,6 @@ main .rightside-area nav .buttons button:nth-last-child(1){
     font-weight: 600;
 }
 main .rightside-area .bottom{
-    background-color: #247f46;
     flex: 1;
     display: flex;
 }
@@ -483,4 +482,23 @@ main .rightside-area .bottom{
     100%{
         rotate: 360deg;
     }
+}
+main .rightside-area .bottom .left{
+    background-color: #fff;
+    height: 100%;
+    width: 65%;
+    border-right: 1px solid #e9e9ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+main .rightside-area .bottom .left p{
+    color: #a0a3a8;
+}
+main .rightside-area .bottom .right{
+    background-color: #fff;
+    height: 100%;
+    width: 35%;
 }
