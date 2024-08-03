@@ -501,4 +501,27 @@ main .rightside-area .bottom .right{
     background-color: #fff;
     height: 100%;
     width: 35%;
+    padding: 20px 15px;
+}
+main .rightside-area .bottom .right h1{
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+main .rightside-area .bottom .right .sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    flex-direction: column;
+}
+main .rightside-area .bottom .right .sec h2{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+main .rightside-area .bottom .right .sec p{
+    font-size: 13px;
+    color: #787a7f;
+    text-align: center;
 }
