@@ -455,13 +455,16 @@ main .rightside-area .bottom{
 }
 .loader-home{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     z-index: 1000;
     background-color: #f2f3f5;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 .loader-home i{
     font-size: 60px;
@@ -543,3 +546,5 @@ main .rightside-area .bottom .right .sec p{
     color: #787a7f;
     text-align: center;
 }
+
+/* resposiveness started */
