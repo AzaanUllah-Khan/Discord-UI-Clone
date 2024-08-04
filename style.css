@@ -78,6 +78,7 @@ main .sidebar-chat {
     height: 100vh;
     background-color: #f2f3f5;
     position: relative;
+    overflow-y: auto;
 }
 
 main .sidebar-chat .top-nav {
@@ -190,7 +191,7 @@ main .sidebar-chat .dm h1:hover{
     color: #4d5058;
 }
 main .sidebar-chat .dm .friends{
-    padding: 0 7px;
+    padding: 0 7px 10px;
     display: flex;
     flex-direction: column;
     gap: 2px;
@@ -265,7 +266,7 @@ main .sidebar-chat .profile{
     justify-content: space-between;
     padding: 10px;
     width: 100%;
-    position: absolute;
+    position: sticky;
     left: 0;
     bottom: 0;
 }
