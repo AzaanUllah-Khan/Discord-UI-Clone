@@ -120,6 +120,7 @@ main .sidebar-chat .list-item:hover {
     color: #060606;
     fill: #060606;
 }
+
 main .sidebar-chat .list-item:hover svg path {
     fill: #060606;
 }
@@ -146,10 +147,12 @@ main .sidebar-chat .list .list-item:nth-child(3) {
     background-size: cover;
     position: relative;
 }
+
 main .sidebar-chat .list .list-item:nth-child(3):hover {
     backdrop-filter: grayscale(100);
 }
-main .sidebar-chat .list .list-item .new{
+
+main .sidebar-chat .list .list-item .new {
     background-color: #d9363b;
     color: white;
     border-radius: 30px;
@@ -159,9 +162,10 @@ main .sidebar-chat .list .list-item .new{
     position: absolute;
     top: 50%;
     right: 10px;
-    transform: translate(0%,-50%);
+    transform: translate(0%, -50%);
 }
-main .sidebar-chat .list .list-item .buy{
+
+main .sidebar-chat .list .list-item .buy {
     background-image: linear-gradient(to right, hsl(269 calc(1 * 52.7%) 52.7% / 1), hsl(325 calc(1 * 31.7%) 51.8% / 1));
     color: white;
     border-radius: 30px;
@@ -171,13 +175,15 @@ main .sidebar-chat .list .list-item .buy{
     position: absolute;
     top: 50%;
     right: 10px;
-    transform: translate(0%,-50%);
+    transform: translate(0%, -50%);
 }
-main .sidebar-chat .dm{
+
+main .sidebar-chat .dm {
     width: 100%;
     margin-top: 10px;
 }
-main .sidebar-chat .dm h1{
+
+main .sidebar-chat .dm h1 {
     padding: 10px 15px 5px;
     width: 100%;
     display: flex;
@@ -187,16 +193,19 @@ main .sidebar-chat .dm h1{
     color: #5b5e65;
     cursor: pointer;
 }
-main .sidebar-chat .dm h1:hover{
+
+main .sidebar-chat .dm h1:hover {
     color: #4d5058;
 }
-main .sidebar-chat .dm .friends{
+
+main .sidebar-chat .dm .friends {
     padding: 0 7px 10px;
     display: flex;
     flex-direction: column;
     gap: 2px;
 }
-main .sidebar-chat .dm .friends .f-li{
+
+main .sidebar-chat .dm .friends .f-li {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -206,21 +215,26 @@ main .sidebar-chat .dm .friends .f-li{
     border-radius: 5px;
     position: relative;
 }
-main .sidebar-chat .dm .friends .f-li p{
+
+main .sidebar-chat .dm .friends .f-li p {
     color: #5b5e65;
     font-weight: 500;
     font-size: 16px;
 }
-main .sidebar-chat .dm .friends .f-li:hover{
+
+main .sidebar-chat .dm .friends .f-li:hover {
     background-color: #d8d9dd;
 }
-main .sidebar-chat .dm .friends .f-li:hover > .img-wrapper::after{
+
+main .sidebar-chat .dm .friends .f-li:hover>.img-wrapper::after {
     background-color: #d8d9dd;
     box-shadow: 0px 0px 0px 3px #d8d9dd;
 }
-main .sidebar-chat .dm .friends .f-li:hover > p{
+
+main .sidebar-chat .dm .friends .f-li:hover>p {
     color: #4d5058;
 }
+
 main .sidebar-chat .dm .friends .f-li .img-wrapper {
     width: 30px;
     height: 30px;
@@ -247,29 +261,33 @@ main .sidebar-chat .dm .friends .f-li .img-wrapper::after {
     border: 3px solid #868990;
     box-shadow: 0px 0px 0px 3px #f2f3f5;
 }
-main .sidebar-chat .dm .friends .f-li i{
+
+main .sidebar-chat .dm .friends .f-li i {
     font-size: 14px;
     color: #5b5e65;
     position: absolute;
     top: 50%;
     right: 8px;
-    transform: translate(0%,-50%);
+    transform: translate(0%, -50%);
     display: none;
 }
-main .sidebar-chat .dm .friends .f-li:hover > i{
+
+main .sidebar-chat .dm .friends .f-li:hover>i {
     display: block;
 }
-main .sidebar-chat .profile{
+
+main .sidebar-chat .profile {
     background-color: #ecedef;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
     width: 100%;
-    position: sticky;
+    position: absolute;
     left: 0;
     bottom: 0;
 }
+
 main .sidebar-chat .profile .img-wrapper {
     width: 30px;
     height: 30px;
@@ -295,49 +313,58 @@ main .sidebar-chat .profile .img-wrapper::after {
     background-color: #24a55a;
     box-shadow: 0px 0px 0px 3px #ecedef;
 }
-main .sidebar-chat .profile .left{
+
+main .sidebar-chat .profile .left {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
-main .sidebar-chat .profile .left .txt{
+
+main .sidebar-chat .profile .left .txt {
     display: flex;
     align-items: start;
     justify-content: center;
     flex-direction: column;
     line-height: 16px;
 }
-main .sidebar-chat .profile .left .txt p{
+
+main .sidebar-chat .profile .left .txt p {
     font-weight: 700;
     font-size: 14px;
 }
-main .sidebar-chat .profile .left .txt span{
+
+main .sidebar-chat .profile .left .txt span {
     font-weight: 300;
     font-size: 12px;
 }
-main .sidebar-chat .profile .right{
+
+main .sidebar-chat .profile .right {
     display: flex;
     align-items: center;
     gap: 10px;
     font-size: 18px;
 }
-main .sidebar-chat .profile .right i{
+
+main .sidebar-chat .profile .right i {
     cursor: pointer;
     color: #4d5057;
 }
-main .sidebar-chat .profile .right i.mute{
+
+main .sidebar-chat .profile .right i.mute {
     transition: all 0s;
     color: #d9373c;
     animation: spring .2s;
     transform: translateX(3px);
 }
-main .sidebar-chat .profile .right i.fa-headphones.mute{
+
+main .sidebar-chat .profile .right i.fa-headphones.mute {
     transition: all 0s;
     color: #d9373c;
     animation: tilt .2s;
     transform: translateX(0px);
 }
+
 main .sidebar-chat .profile .right i.fa-gear {
     transition: all .5s ease-in-out;
     transform: rotate(0deg);
@@ -348,39 +375,48 @@ main .sidebar-chat .profile .right i.fa-gear:hover {
 }
 
 @keyframes spring {
-    0%{
+    0% {
         transform: translateX(0px);
     }
-    25%{
+
+    25% {
         transform: translateX(2px);
     }
-    50%{
+
+    50% {
         transform: translateX(-2px);
     }
-    100%{
+
+    100% {
         transform: translateX(2px);
     }
 }
+
 @keyframes tilt {
-    0%{
+    0% {
         transform: translateY(0px);
     }
-    25%{
+
+    25% {
         transform: translateY(2px);
     }
-    50%{
+
+    50% {
         transform: translateY(-2px);
     }
-    100%{
+
+    100% {
         transform: translateY(2px);
     }
 }
-main .rightside-area{
+
+main .rightside-area {
     width: 75%;
     display: flex;
     flex-direction: column;
 }
-main .rightside-area nav{
+
+main .rightside-area nav {
     width: 100%;
     padding: 11px 15px;
     border-bottom: 2px solid #f5f5f5;
@@ -388,46 +424,55 @@ main .rightside-area nav{
     align-items: center;
     justify-content: space-between;
 }
-main .rightside-area nav .left-side{
-   display: flex;
-   align-items: center;
+
+main .rightside-area nav .left-side {
+    display: flex;
+    align-items: center;
 }
-main .rightside-area nav .icons-end{
-   display: flex;
-   align-items: center;
-   gap: 15px;
+
+main .rightside-area nav .icons-end {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
-main .rightside-area nav .icons-end i{
-   font-size: 22px;
-   color: #4d5057;
+
+main .rightside-area nav .icons-end i {
+    font-size: 22px;
+    color: #4d5057;
 }
-main .rightside-area nav .icons-end i:nth-child(1){
-   border-right: 1px solid #e9e9eb;
-   padding-right: 15px;
+
+main .rightside-area nav .icons-end i:nth-child(1) {
+    border-right: 1px solid #e9e9eb;
+    padding-right: 15px;
 }
-main .rightside-area nav .one{
-   display: flex;
-   align-items: center;
-   gap: 6px;
-   font-weight: 600;
-   font-size: 16px;
-   border-right: 1px solid #e9e9eb;
-   width: 100px;
+
+main .rightside-area nav .one {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    border-right: 1px solid #e9e9eb;
+    width: 100px;
 }
-main .rightside-area nav .one svg path{
-   fill: #6c6f78;
+
+main .rightside-area nav .one svg path {
+    fill: #6c6f78;
 }
-main .rightside-area nav .buttons{
+
+main .rightside-area nav .buttons {
     padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: start;
     gap: 15px;
 }
-main .rightside-area nav .buttons{
+
+main .rightside-area nav .buttons {
     padding: 0 20px;
 }
-main .rightside-area nav .buttons button{
+
+main .rightside-area nav .buttons button {
     background-color: transparent;
     outline: none;
     border: none;
@@ -437,24 +482,29 @@ main .rightside-area nav .buttons button{
     cursor: pointer;
     font-weight: 400;
 }
-main .rightside-area nav .buttons button.active{
+
+main .rightside-area nav .buttons button.active {
     background-color: #e1e2e4;
     font-weight: 600;
 }
-main .rightside-area nav .buttons button:hover{
+
+main .rightside-area nav .buttons button:hover {
     background-color: #e1e2e4;
     font-weight: 500;
 }
-main .rightside-area nav .buttons button:nth-last-child(1){
+
+main .rightside-area nav .buttons button:nth-last-child(1) {
     background-color: #247f46;
     color: white;
     font-weight: 600;
 }
-main .rightside-area .bottom{
+
+main .rightside-area .bottom {
     flex: 1;
     display: flex;
 }
-.loader-home{
+
+.loader-home {
     width: 100%;
     height: 100%;
     z-index: 1000;
@@ -467,17 +517,20 @@ main .rightside-area .bottom{
     top: 0;
     left: 0;
 }
-.loader-home i{
+
+.loader-home i {
     font-size: 60px;
     color: #2e3339;
     margin-bottom: 30px;
     animation: spindis .75s infinite;
 }
-.loader-home h1{
+
+.loader-home h1 {
     font-size: 14px;
     color: #0b0c0e;
     margin-bottom: 15px;
 }
+
 .rest-of-words {
     font-size: 16px;
     color: #303133;
@@ -488,6 +541,7 @@ main .rightside-area .bottom{
     text-align: center;
     gap: 10px;
 }
+
 .button-style {
     padding: 5px 10px;
     border-radius: 5px;
@@ -497,15 +551,18 @@ main .rightside-area .bottom{
     background-color: rgb(234, 235, 237);
     margin-right: 5px;
 }
+
 @keyframes spindis {
-    0%{
+    0% {
         rotate: 0deg;
     }
-    100%{
+
+    100% {
         rotate: 360deg;
     }
 }
-main .rightside-area .bottom .left{
+
+main .rightside-area .bottom .left {
     background-color: #fff;
     height: 100%;
     width: 65%;
@@ -516,110 +573,143 @@ main .rightside-area .bottom .left{
     flex-direction: column;
     gap: 50px;
 }
-main .rightside-area .bottom .left p{
+
+main .rightside-area .bottom .left p {
     color: #a0a3a8;
 }
-main .rightside-area .bottom .right{
+
+main .rightside-area .bottom .right {
     background-color: #fff;
     height: 100%;
     width: 35%;
     padding: 20px 15px;
 }
-main .rightside-area .bottom .right h1{
+
+main .rightside-area .bottom .right h1 {
     font-size: 20px;
     font-weight: 900;
     margin-bottom: 20px;
 }
-main .rightside-area .bottom .right .sec{
+
+main .rightside-area .bottom .right .sec {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3px;
     flex-direction: column;
 }
-main .rightside-area .bottom .right .sec h2{
+
+main .rightside-area .bottom .right .sec h2 {
     font-size: 16px;
     font-weight: 600;
     text-align: center;
 }
-main .rightside-area .bottom .right .sec p{
+
+main .rightside-area .bottom .right .sec p {
     font-size: 13px;
     color: #787a7f;
     text-align: center;
 }
+
 @media screen and (max-width: 1250px) {
-    main .sidebar-chat{
+    main .sidebar-chat {
         width: 22%;
     }
-    main .rightside-area{
+
+    main .rightside-area {
         width: 72%;
     }
 }
+
 @media screen and (max-width: 1050px) {
-    main .sidebar-chat{
+    main .sidebar-chat {
         width: 26%;
     }
-    main .rightside-area{
+
+    main .rightside-area {
         width: 68%;
     }
-    main .rightside-area .bottom .left{
+
+    main .rightside-area .bottom .left {
         width: 100%;
         border: none;
     }
-    main .rightside-area .bottom .right{
+
+    main .rightside-area .bottom .right {
         display: none;
     }
-    main .rightside-area nav .icons-end{
+
+    main .rightside-area nav .icons-end {
         display: none;
     }
 }
+
 @media screen and (max-width: 850px) {
-    main aside{
+    main aside {
         width: 10%;
     }
-    main .sidebar-chat{
+
+    main .sidebar-chat {
         width: 30%;
     }
-    main .rightside-area{
+
+    main .rightside-area {
         width: 60%;
     }
-    main .rightside-area nav .left-side button:nth-child(3){
+
+    main .rightside-area nav .left-side button:nth-child(3) {
         display: none;
     }
-    main .rightside-area nav .left-side button:nth-child(4){
+
+    main .rightside-area nav .left-side button:nth-child(4) {
         display: none;
     }
 }
+
 @media screen and (max-width: 750px) {
-    main aside{
+    main aside {
         width: 10%;
     }
-    main .sidebar-chat{
+
+    main .sidebar-chat {
         width: 90%;
     }
-    main .rightside-area{
+
+    main .rightside-area {
         display: none;
     }
 }
+
 @media screen and (max-width: 550px) {
-    main aside{
+    main aside {
         width: 15%;
     }
-    main .sidebar-chat{
+
+    main .sidebar-chat {
         width: 85%;
     }
-    main .rightside-area{
+
+    main .rightside-area {
         display: none;
     }
 }
+
 @media screen and (max-width: 350px) {
-    main aside{
+    main aside {
         width: 20%;
     }
-    main .sidebar-chat{
+
+    main .sidebar-chat {
         width: 80%;
     }
-    main .rightside-area{
+
+    main .rightside-area {
         display: none;
+    }
+}
+
+@media screen and (max-height: 510px) {
+    main .sidebar-chat .profile {
+        position: sticky;
     }
 }
