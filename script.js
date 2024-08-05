@@ -1,5 +1,6 @@
-var micO = false
-var headO = false
+var micO = false;
+var headO = false;
+var toggleOpen = false;
 
 window.onload = function () {
     setTimeout(function () {
@@ -28,11 +29,25 @@ function mic() {
 function headp() {
     if (!headO) {
         x.play();
-        document.getElementById("head").className = "fa-solid fa-headphones mute"
-        headO = true
+        document.getElementById("head").className = "fa-solid fa-headphones mute";
+        headO = true;
     } else {
-        document.getElementById("head").className = "fa-solid fa-headphones"
+        document.getElementById("head").className = "fa-solid fa-headphones";
         y.play();
-        headO = false
+        headO = false;
+    }
+}
+
+function openToggle() {
+    if (window.innerWidth < 750) {
+        if (!toggleOpen) {
+            document.getElementById("s").style.display = "none";
+            document.getElementById("r").style.display = "flex";
+            toggleOpen = true;
+        } else {
+            document.getElementById("s").style.display = "block";
+            document.getElementById("r").style.display = "none";
+            toggleOpen = false;
+        }
     }
 }

@@ -677,6 +677,10 @@ main .rightside-area .bottom .right .sec p {
 
     main .rightside-area {
         display: none;
+        width: 80%;
+    }
+    main .rightside-area img{
+        width: 50%;
     }
 }
 
@@ -688,10 +692,6 @@ main .rightside-area .bottom .right .sec p {
     main .sidebar-chat {
         width: 85%;
     }
-
-    main .rightside-area {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 350px) {
@@ -701,10 +701,6 @@ main .rightside-area .bottom .right .sec p {
 
     main .sidebar-chat {
         width: 80%;
-    }
-
-    main .rightside-area {
-        display: none;
     }
 }
 
