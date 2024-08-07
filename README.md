@@ -1,6 +1,6 @@
 # 🎮 Discord Clone
 
-Welcome to the **Discord Clone** project! This project aims to replicate the look and feel of Discord using HTML, CSS, and JavaScript. It is fully responsive and includes many animations to enhance the user experience.
+Welcome to the **Discord Clone** project ! This project aims to replicate the look and feel of Discord using HTML, CSS, and JavaScript. It is fully responsive and includes many animations to enhance the user experience.
 
 ## 📋 Table of Contents
 
